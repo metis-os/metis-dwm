@@ -1,0 +1,5 @@
+post_install() {
+	echo '*************************'
+	echo -e "\n[*] metis-dwm is successfully installed now reboot the computer.\n"	
+	echo '*************************'
+}
