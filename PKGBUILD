@@ -1,4 +1,6 @@
-# Maintainer: iyamnabeen <iym.nabeen@gmail.com>
+# Maintainer: iyamnabeen 
+# gmail:  <iym.nabeen@gmail.com>
+# github: <github.com/iyamnabeen>
 
 pkgname=metis-dwm
 pkgver=1.0

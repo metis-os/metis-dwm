@@ -17,7 +17,7 @@ static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#4a393b";
 static char normfgcolor[]           = "#bbbbbb";
 static char selfgcolor[]            = "#e617b6";
-static char selbordercolor[]        = "#d8d9d0";
+static char selbordercolor[]        = "#f542aa";
 static char selbgcolor[]            = "#4f4746";
 static char *colors[][3] = {
        /*               fg           bg           border   */
@@ -31,7 +31,7 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { " terminal", " browser "," lynx"," passed"," others", };
+static const char *tags[] = { " terminal", " browser "," lynx"," burpsuite"," others", };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -39,11 +39,8 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class                instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
-	/*{ "TelegramDesktop",    NULL,     NULL,           0,         1,          0,           0,        -1 },
-	{ "obs",                NULL,     NULL,           0,         1,          0,           0,        -1 },
-	{ "Lutris",             NULL,     NULL,           0,         1,          0,           0,        -1 },*/
 	{ "firefox",   		NULL,     NULL,           1 << 1,    0,          0,          -1,        -1 },
-	{ "St",                 NULL,     NULL,           0,         0,          1,           0,        -1 },
+	{ "burpsuite",     	NULL,     NULL,           4<<5,      0,          0,          -1,        -1 },
 	{ NULL,                 NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
 };
 
@@ -54,9 +51,9 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	{ " ",      tile },    /* first entry is default */
+	{ " " ,      NULL },    /* no layout function means floating behavior */
+        { "[M]",      monocle },
 };
 
 /* key definitions */
