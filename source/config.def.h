@@ -9,8 +9,8 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int vertpad            = 16;       /* vertical padding of bar */
 static const int sidepad            = 16;       /* horizontal padding of bar */
-static const char *fonts[]          = { "JetBrains Mono, monospace:size=12"};
-static const char dmenufont[]       = "JetBrains Mono, monospace:size=12";
+static const char *fonts[]          = { "JetBrainsMono Nerd Font, monospace:size=12"};
+static const char dmenufont[]       = "JetBrainsMono Nerd Font, monospace:size=12";
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
 static char normbgcolor[]           = "#222222";
@@ -23,8 +23,8 @@ static char selbgcolor[]            = "#4f4746";
 static const char *upvol[]   = { "pactl", "set-sink-volume", "0", "+5%",     NULL };
 static const char *downvol[] = { "pactl", "set-sink-volume", "0", "-5%",     NULL };
 static const char *mutevol[] = { "pactl", "set-sink-mute",   "0", "toggle",  NULL };
-static const char *light_up[] = {"light", "-A", "3", NULL};
-static const char *light_down[] = {"light", "-U", "3", NULL};
+static const char *light_up[] = {"brillo", "-A", "3", NULL};
+static const char *light_down[] = {"brillo", "-U", "3", NULL};
 
 static char *colors[][3] = {
        /*               fg           bg           border   */
@@ -52,7 +52,7 @@ static Sp scratchpads[] = {
 
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "" };
+static const char *tags[] = { "terminal", " browser", " music", "辶video", " useless" };
 
 static const Rule rules[] = {
 	/* xprop(1):

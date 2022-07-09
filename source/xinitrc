@@ -1,0 +1,17 @@
+#audio server
+/usr/bin/pipewire &
+/usr/bin/pipewire-pulse &
+/usr/bin/pipewire-media-session &
+#wallpaper
+xwallpaper --zoom /usr/share/backgrounds/metis/b-01-dark.png
+#slstatus
+slstatus &
+#loop
+while true;do
+dwm >/dev/null 2>&1
+done
+#picom
+picom --experimental-backends &
+#dwm
+exec dwm
+
