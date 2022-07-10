@@ -30,7 +30,6 @@ package() {
   cd "$srcdir"
   make PREFIX=/usr DESTDIR="$pkgdir" install
   install -m644 -D "$srcdir/dwm.desktop" "$pkgdir/usr/share/xsessions/dwm.desktop"
-  install -m644 -D "$srcdir/xinitrc" "$pkgdir/etc/X11/xinit/xinitrc"
 
 
 }
