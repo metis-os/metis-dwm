@@ -52,7 +52,7 @@ static Sp scratchpads[] = {
 
 
 /* tagging */
-static const char *tags[] = { "terminal", " browser", " music", "辶video", " useless" };
+static const char *tags[] = { " terminal", " browser", " music", "辶video", " useless" };
 
 static const Rule rules[] = {
 	/* xprop(1):
