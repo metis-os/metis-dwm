@@ -7,8 +7,6 @@ function down {
 		 loginctl poweroff 
 	elif [[ $selected = "reboot" ]]; then
 		loginctl reboot
-    elif [[$selected = "lock"]]; then
-        slock
     elif [[ $selected = "cancel" ]]; then
 		return
 	fi
