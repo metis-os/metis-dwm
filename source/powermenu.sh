@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 function down {
-	options="cancel\nshutdown\nreboot\nlock"
+	options="cancel\nshutdown\nreboot"
 	selected=$(echo -e $options | dmenu)
 	if [[ $selected =  "shutdown" ]]; then
 		 loginctl poweroff 
