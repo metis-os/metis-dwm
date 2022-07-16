@@ -3,7 +3,7 @@
 # github: <github.com/iyamnabeen>
 
 pkgname=metis-dwm
-pkgver=1.2
+pkgver=1.3
 pkgrel=5
 pkgdesc="DWM for metis-os"
 url="https://github.com/metis-os/metis-dwm"
