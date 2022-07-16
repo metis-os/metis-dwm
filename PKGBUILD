@@ -30,6 +30,6 @@ package() {
   cd "$srcdir"
   make PREFIX=/usr DESTDIR="$pkgdir" install
   install -m644 -D "$srcdir/dwm.desktop" "$pkgdir/usr/share/xsessions/dwm.desktop"
-  install -m676 -D "$srcdir/powermenu.sh" "$pkgdir/$HOME/.config/powermenu.sh"
+  install -m755 -D "$srcdir/powermenu.sh" "$pkgdir/usr/local/bin/powermenu.sh"
 
 }
